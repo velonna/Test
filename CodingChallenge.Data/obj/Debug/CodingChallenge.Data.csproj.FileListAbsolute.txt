@@ -1,0 +1,13 @@
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\CodingChallenge.Data.dll
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\CodingChallenge.Data.pdb
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\Castle.Core.dll
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\Moq.dll
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\Castle.Core.xml
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\Moq.xml
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.AssemblyReference.cache
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.CopyComplete
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.dll
+C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.pdb
