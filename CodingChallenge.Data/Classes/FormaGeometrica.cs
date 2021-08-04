@@ -17,12 +17,9 @@ namespace CodingChallenge.Data.Classes
     public class FormaGeometrica
     {
         #region Formas
-
-        public const int Cuadrado = 1;
-        public const int TrianguloEquilatero = 2;
-        public const int Circulo = 3;
-        public const int Trapecio = 4;
-
+               
+        public List<String> listaFormas = new List<String>();
+        public List<String> ShapesList = new List<String>();
         #endregion
 
         #region Idiomas
@@ -40,6 +37,20 @@ namespace CodingChallenge.Data.Classes
         {
             Tipo = tipo;
             _lado = ancho;
+            listaFormas.Add("Seleccione una figura");
+            listaFormas.Add("Cuadrado");
+            listaFormas.Add("Triangulo Equilatero");
+            listaFormas.Add("Circulo");
+            listaFormas.Add("Trapecio");
+            listaFormas.Add("Otras Formas");
+
+
+            ShapesList.Add("Select a Figure");
+            ShapesList.Add("Square");
+            ShapesList.Add("Equilateral triangle");
+            ShapesList.Add("Circle");
+            ShapesList.Add("Trapeze");
+            ShapesList.Add("Other Shapes");
         }
 
         public static string Imprimir(List<FormaGeometrica> formas, int idioma)
@@ -77,19 +88,19 @@ namespace CodingChallenge.Data.Classes
 
                 for (var i = 0; i < formas.Count; i++)
                 {
-                    if (formas[i].Tipo == Cuadrado)
+                    if (formas[i].Tipo == Formas.Cuadrado)
                     {
                         numeroCuadrados++;
                         areaCuadrados += formas[i].CalcularArea();
                         perimetroCuadrados += formas[i].CalcularPerimetro();
                     }
-                    if (formas[i].Tipo == Circulo)
+                    if (formas[i].Tipo == Formas.Circulo)
                     {
                         numeroCirculos++;
                         areaCirculos += formas[i].CalcularArea();
                         perimetroCirculos += formas[i].CalcularPerimetro();
                     }
-                    if (formas[i].Tipo == TrianguloEquilatero)
+                    if (formas[i].Tipo == Formas.TrianguloEquilatero)
                     {
                         numeroTriangulos++;
                         areaTriangulos += formas[i].CalcularArea();
@@ -97,9 +108,9 @@ namespace CodingChallenge.Data.Classes
                     }
                 }
                 
-                sb.Append(ObtenerLinea(numeroCuadrados, areaCuadrados, perimetroCuadrados, Cuadrado, idioma));
-                sb.Append(ObtenerLinea(numeroCirculos, areaCirculos, perimetroCirculos, Circulo, idioma));
-                sb.Append(ObtenerLinea(numeroTriangulos, areaTriangulos, perimetroTriangulos, TrianguloEquilatero, idioma));
+                sb.Append(ObtenerLinea(numeroCuadrados, areaCuadrados, perimetroCuadrados, Formas.Cuadrado, idioma));
+                sb.Append(ObtenerLinea(numeroCirculos, areaCirculos, perimetroCirculos, Formas.Circulo, idioma));
+                sb.Append(ObtenerLinea(numeroTriangulos, areaTriangulos, perimetroTriangulos, Formas.TrianguloEquilatero, idioma));
 
                 // FOOTER
                 sb.Append("TOTAL:<br/>");
@@ -128,13 +139,13 @@ namespace CodingChallenge.Data.Classes
         {
             switch (tipo)
             {
-                case Cuadrado:
+                case Formas.Cuadrado:
                     if (idioma == Castellano) return cantidad == 1 ? "Cuadrado" : "Cuadrados";
                     else return cantidad == 1 ? "Square" : "Squares";
-                case Circulo:
+                case Formas.Circulo:
                     if (idioma == Castellano) return cantidad == 1 ? "Círculo" : "Círculos";
                     else return cantidad == 1 ? "Circle" : "Circles";
-                case TrianguloEquilatero:
+                case Formas.TrianguloEquilatero:
                     if (idioma == Castellano) return cantidad == 1 ? "Triángulo" : "Triángulos";
                     else return cantidad == 1 ? "Triangle" : "Triangles";
             }
@@ -146,9 +157,9 @@ namespace CodingChallenge.Data.Classes
         {
             switch (Tipo)
             {
-                case Cuadrado: return _lado * _lado;
-                case Circulo: return (decimal)Math.PI * (_lado / 2) * (_lado / 2);
-                case TrianguloEquilatero: return ((decimal)Math.Sqrt(3) / 4) * _lado * _lado;
+                case Formas.Cuadrado: return _lado * _lado;
+                case Formas.Circulo: return (decimal)Math.PI * (_lado / 2) * (_lado / 2);
+                case Formas.TrianguloEquilatero: return ((decimal)Math.Sqrt(3) / 4) * _lado * _lado;
                 default:
                     throw new ArgumentOutOfRangeException(@"Forma desconocida");
             }
@@ -158,12 +169,21 @@ namespace CodingChallenge.Data.Classes
         {
             switch (Tipo)
             {
-                case Cuadrado: return _lado * 4;
-                case Circulo: return (decimal)Math.PI * _lado;
-                case TrianguloEquilatero: return _lado * 3;
+                case Formas.Cuadrado: return _lado * 4;
+                case Formas.Circulo: return (decimal)Math.PI * _lado;
+                case Formas.TrianguloEquilatero: return _lado * 3;
                 default:
                     throw new ArgumentOutOfRangeException(@"Forma desconocida");
             }
         }
+    }
+
+    public class Formas
+    {
+        public const int Cuadrado = 1;
+        public const int TrianguloEquilatero = 2;
+        public const int Circulo = 3;
+        public const int Trapecio = 4;
+        public int OtrasFormas { get; set; }
     }
 }

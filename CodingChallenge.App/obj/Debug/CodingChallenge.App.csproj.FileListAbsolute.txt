@@ -1,0 +1,10 @@
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\bin\Debug\CodingChallenge.App.exe.config
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\bin\Debug\CodingChallenge.App.exe
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\bin\Debug\CodingChallenge.App.pdb
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\bin\Debug\CodingChallenge.Data.dll
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\bin\Debug\CodingChallenge.Data.pdb
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\obj\Debug\CodingChallenge.App.csproj.AssemblyReference.cache
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\obj\Debug\CodingChallenge.App.csproj.CoreCompileInputs.cache
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\obj\Debug\CodingChallenge.App.csproj.CopyComplete
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\obj\Debug\CodingChallenge.App.exe
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.App\obj\Debug\CodingChallenge.App.pdb

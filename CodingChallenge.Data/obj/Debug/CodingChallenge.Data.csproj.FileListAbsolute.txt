@@ -11,3 +11,16 @@ C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\Co
 C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.CopyComplete
 C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.dll
 C:\Users\USER\Documents\GitHub\CodingChallenge\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.pdb
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\CodingChallenge.Data.dll
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\CodingChallenge.Data.pdb
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\Castle.Core.dll
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\Moq.dll
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\Castle.Core.xml
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\Moq.xml
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.AssemblyReference.cache
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.CoreCompileInputs.cache
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.csproj.CopyComplete
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.dll
+C:\Users\vnao\Documents\GitHub\Test\CodingChallenge.Data\obj\Debug\CodingChallenge.Data.pdb
