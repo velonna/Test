@@ -60,19 +60,19 @@ namespace CodingChallenge.Data.Classes
             if (!formas.Any())
             {
                 if (idioma == Castellano)
-                    sb.Append("<h1>Lista vacía de formas!</h1>");
+                    sb.Append("Lista vacía de formas!");
                 else
-                    sb.Append("<h1>Empty list of shapes!</h1>");
+                    sb.Append("Empty list of shapes!");
             }
             else
             {
                 // Hay por lo menos una forma
                 // HEADER
                 if (idioma == Castellano)
-                    sb.Append("<h1>Reporte de Formas</h1>");
+                    sb.Append("Reporte de Formas");
                 else
                     // default es inglés
-                    sb.Append("<h1>Shapes report</h1>");
+                    sb.Append("Shapes report");
 
                 var numeroCuadrados = 0;
                 var numeroCirculos = 0;
@@ -113,7 +113,7 @@ namespace CodingChallenge.Data.Classes
                 sb.Append(ObtenerLinea(numeroTriangulos, areaTriangulos, perimetroTriangulos, Formas.TrianguloEquilatero, idioma));
 
                 // FOOTER
-                sb.Append("TOTAL:<br/>");
+                sb.Append("TOTAL:");
                 sb.Append(numeroCuadrados + numeroCirculos + numeroTriangulos + " " + (idioma == Castellano ? "formas" : "shapes") + " ");
                 sb.Append((idioma == Castellano ? "Perimetro " : "Perimeter ") + (perimetroCuadrados + perimetroTriangulos + perimetroCirculos).ToString("#.##") + " ");
                 sb.Append("Area " + (areaCuadrados + areaCirculos + areaTriangulos).ToString("#.##"));
@@ -127,9 +127,9 @@ namespace CodingChallenge.Data.Classes
             if (cantidad > 0)
             {
                 if (idioma == Castellano)
-                    return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | Area {area:#.##} | Perimetro {perimetro:#.##} <br/>";
+                    return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | Area {area:#.##} | Perimetro {perimetro:#.##} ";
 
-                return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | Area {area:#.##} | Perimeter {perimetro:#.##} <br/>";
+                return $"{cantidad} {TraducirForma(tipo, cantidad, idioma)} | Area {area:#.##} | Perimeter {perimetro:#.##} ";
             }
 
             return string.Empty;

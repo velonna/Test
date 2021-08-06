@@ -50,10 +50,13 @@ namespace CodingChallenge.FormApp
 
         private void EntrarConIdioma(string v)
         {
-            
+            this.cmbSelectFigura.Items.Clear();
+
+
             if (v == "En") {
                 FormaGeometrica formas = new FormaGeometrica(2,0);
                 this.lblSelectLang.Text = Languages.lblSelectLang;
+                this.label1.Text = "Select a Shape";
                 this.lblResult.Text = Languages.lblResult;
 
                 foreach (string figura in formas.ShapesList) {
@@ -65,6 +68,8 @@ namespace CodingChallenge.FormApp
             else { 
                 this.lblSelectLang.Text = Lenguajes.lblSelectLang;
                 this.lblResult.Text = Lenguajes.lblResult;
+                
+                this.label1.Text = "Seleccione Figura";
                 FormaGeometrica formas = new FormaGeometrica(1, 0);
                 foreach (string figura in formas.listaFormas)
                 {
@@ -84,8 +89,20 @@ namespace CodingChallenge.FormApp
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             int _figura = this.cmbSelectFigura.SelectedIndex;
-            figuras.Add(new FormaGeometrica(tipo,_figura));
-            this.lblSb.Text = FormaGeometrica.Imprimir(figuras,tipo);
+            if (_figura !=5)
+            {
+                
+                figuras.Clear();
+                figuras.Add(new FormaGeometrica(tipo, _figura));
+                this.lblSb.Text = "";
+                this.lblSb.Text = FormaGeometrica.Imprimir(figuras, tipo);
+            }
+            else
+            {
+                this.lblSb.Text = "";
+                this.lblSb.Text = "The connection is not available at the moment.  ";
+                    
+                    }
         }
     }
 }

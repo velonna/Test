@@ -65,7 +65,7 @@ namespace CodingChallenge.FormApp
             this.cmbSelectFigura.FormattingEnabled = true;
             this.cmbSelectFigura.Location = new System.Drawing.Point(344, 172);
             this.cmbSelectFigura.Name = "cmbSelectFigura";
-            this.cmbSelectFigura.Size = new System.Drawing.Size(172, 24);
+            this.cmbSelectFigura.Size = new System.Drawing.Size(160, 0);
             this.cmbSelectFigura.TabIndex = 2;
             this.cmbSelectFigura.Text = "Seleccione la Figura";
             this.cmbSelectFigura.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
@@ -102,7 +102,7 @@ namespace CodingChallenge.FormApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(850,450);
             this.Controls.Add(this.lblSb);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.label1);
